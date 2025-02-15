@@ -11,48 +11,46 @@
         <h1>História da Fórmula 1</h1>
         <nav>
             <ul>
-                <li><a href="#" onclick="changePage(1)">A Criação da Fórmula 1</a></li>
-                <li><a href="#" onclick="changePage(2)">Os Primeiros Carros</a></li>
-                <li><a href="#" onclick="changePage(3)">As Pistas Iniciais</a></li>
-                <li><a href="#" onclick="changePage(4)">Os Anos 70</a></li>
-                <li><a href="#" onclick="changePage(5)">Os Anos 80</a></li>
-                <li><a href="#" onclick="changePage(6)">Os Anos 90</a></li>
-                <li><a href="#" onclick="changePage(7)">Os Anos 2000</a></li>
+                <li><a href="#" data-page="1">A Criação da F1</a></li>
+                <li><a href="#" data-page="2">Os Primeiros Carros</a></li>
+                <li><a href="#" data-page="3">As Pistas Iniciais</a></li>
+                <li><a href="#" data-page="4">Os Anos 70</a></li>
+                <li><a href="#" data-page="5">Os Anos 80</a></li>
+                <li><a href="#" data-page="6">Os Anos 90</a></li>
+                <li><a href="#" data-page="7">Os Anos 2000</a></li>
             </ul>
         </nav>
     </header>
     
-    <main id="content">
-        <div id="page1" class="page">
+    <main>
+        <div id="page1" class="page active">
             <h2>Quando foi criada a Fórmula 1</h2>
-            <img src="todos.jpg" alt="">
-            <p>A Fórmula 1 foi criada em 1950, com o objetivo de proporcionar uma competição internacional para carros de corrida. Ela se tornou o campeonato mais prestigiado do mundo automobilístico.</p>
-            <p>A Fórmula 1 foi criada para ser um campo de testes e evolução para tecnologias automotivas, além de proporcionar uma disputa de alto nível entre pilotos e equipes.</p>
+            <img src="img/todos.jpg" alt="Carros de F1 antigos">
+            <p>A Fórmula 1 foi criada em 1950, tornando-se o campeonato mais prestigiado do mundo automobilístico.</p>
         </div>
         <div id="page2" class="page">
             <h2>Os Primeiros Carros da Fórmula 1</h2>
-            <p>Os primeiros carros de Fórmula 1 eram bastante diferentes dos de hoje. O motor, ainda simples, tinha uma potência menor em comparação com os carros atuais. A aerodinâmica era rudimentar, com poucas mudanças nas formas dos carros para melhorar a performance.</p>
-            <p>Em termos de segurança, os carros não eram protegidos de forma adequada. Não havia dispositivos como os atuais sistemas de segurança e os pilotos enfrentavam riscos elevados.</p>
+            <p>Os primeiros carros eram rudimentares, com baixa potência e pouca aerodinâmica.</p>
         </div>
         <div id="page3" class="page">
-            <h2>As Pistas Iniciais da Fórmula 1</h2>
-            <p>As primeiras corridas de Fórmula 1 aconteciam em circuitos de rua e pistas improvisadas, com poucas medidas de segurança. Algumas das primeiras pistas famosas incluem Silverstone e Monza, que ainda são utilizadas hoje.</p>
+            <h2>As Pistas Iniciais</h2>
+            <p>As primeiras corridas ocorriam em circuitos de rua e pistas improvisadas.</p>
         </div>
         <div id="page4" class="page">
             <h2>Os Anos 70 e Emerson Fittipaldi</h2>
-            <p>Nos anos 70, a Fórmula 1 viu um grande aumento na popularidade. Emerson Fittipaldi, um dos maiores pilotos brasileiros, conquistou dois campeonatos mundiais, em 1972 e 1974, marcando uma era de sucesso para o Brasil no esporte.</p>
+            <p>O Brasil brilhou com Emerson Fittipaldi, bicampeão da categoria.</p>
         </div>
         <div id="page5" class="page">
-            <h2>Os Anos 80 e os Avanços Tecnológicos</h2>
-            <p>Durante os anos 80, a Fórmula 1 experimentou grandes avanços tecnológicos, com a introdução de motores turbo, eletrônica e suspensão ativa. O início da carreira de Ayrton Senna também aconteceu nesta década, mudando a história da categoria.</p>
+            <h2>Os Anos 80</h2>
+            <p>Avanços tecnológicos e o surgimento de Ayrton Senna marcaram essa época.</p>
         </div>
         <div id="page6" class="page">
-            <h2>Os Anos 90 e os Avanços nos Carros</h2>
-            <p>Nos anos 90, os carros de Fórmula 1 continuaram a evoluir, com a introdução de novas tecnologias, como os pneus de perfil baixo e o controle eletrônico de tração. Esse período também foi marcado pela trágica morte de Ayrton Senna e pelas primeiras vitórias de Michael Schumacher.</p>
+            <h2>Os Anos 90</h2>
+            <p>Schumacher começa sua era de domínio e o esporte evolui tecnologicamente.</p>
         </div>
         <div id="page7" class="page">
-            <h2>Os Anos 2000 e os Avanços Atuais</h2>
-            <p>Nos anos 2000, a Fórmula 1 continuou a evoluir, com a introdução de novos regulamentos para a segurança e o desempenho dos carros. Atualmente, o campeão da Fórmula 1 é [Nome do Campeão Atual], que tem dominado as pistas com sua habilidade e tecnologia avançada.</p>
+            <h2>Os Anos 2000</h2>
+            <p>Novos regulamentos e a ascensão de novos campeões.</p>
         </div>
     </main>
 
@@ -60,6 +58,6 @@
         <p>&copy; 2025 História da Fórmula 1</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="Formula1.js"></script>
 </body>
 </html>

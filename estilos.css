@@ -7,56 +7,97 @@
 
 /* Estilo geral */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
 }
 
 /* Cabeçalho */
 header {
-    background-color: #222;
+    background: linear-gradient(90deg, #ff0000, #000);
     color: #fff;
-    padding: 20px 0;
+    padding: 5px 0;
     text-align: center;
+    font-size: 1.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 1px;
+    flex-wrap: wrap;
+    padding-top: 10px;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 10px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    background-color: #ff0000;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    background-color: #c40000;
 }
 
 /* Conteúdo */
 main {
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 70px;
 }
 
 .page {
     display: none;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
 }
 
+.page.active {
+    display: block;
+}
+
+.page img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Rodapé */
 footer {
     text-align: center;
-    background-color: #222;
+    background: linear-gradient(90deg, #000, #ff0000);
     color: #fff;
     padding: 10px;
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
 }
