@@ -1,39 +1,18 @@
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("JavaScript carregado!");
+document.addEventListener("DOMContentLoaded", () => {
+    const navLinks = document.querySelectorAll("nav ul li a");
+    const pages = document.querySelectorAll(".page");
 
-    // Seleciona todos os links do menu
-    const links = document.querySelectorAll("nav ul li a");
+    navLinks.forEach(link => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault();
+            const pageId = link.getAttribute("data-page");
 
-    // Adiciona evento de clique aos links
-    links.forEach(link => {
-        link.addEventListener("click", function (event) {
-            event.preventDefault(); // Impede recarregamento da página
-
-            const pageNumber = this.getAttribute("data-page"); // Obtém número da página
-            console.log("Mudando para página:", pageNumber);
-
-            changePage(pageNumber);
+            pages.forEach(page => page.classList.remove("active"));
+            document.getElementById(`page${pageId}`).classList.add("active");
         });
     });
-
-    // Exibe a primeira página ao carregar
-    changePage(1);
 });
-
-// Função para trocar de página
-function changePage(pageNumber) {
-    console.log("Página ativa:", pageNumber);
-
-    // Oculta todas as páginas
-    document.querySelectorAll('.page').forEach(page => {
-        page.classList.remove('active');
-    });
-
-    // Mostra apenas a página correta
-    const selectedPage = document.getElementById('page' + pageNumber);
-    if (selectedPage) {
-        selectedPage.classList.add('active');
-    } else {
-        console.error("Página não encontrada:", pageNumber);
-    }
-}
+document.getElementById("entrar").addEventListener("click", function() {
+    // Redireciona para a página principal do site
+    window.location.href = "pagina-principal.html";
+});
